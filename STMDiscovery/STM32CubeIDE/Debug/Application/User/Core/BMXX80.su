@@ -1,0 +1,11 @@
+../Application/User/Core/BMXX80.c:53:9:BMP180_Read8	40	static
+../Application/User/Core/BMXX80.c:100:10:BMP180_Read16	40	static
+../Application/User/Core/BMXX80.c:166:6:BMP180_Write8	32	static
+../Application/User/Core/BMXX80.c:243:10:BMP180_readRawTemperature	8	static
+../Application/User/Core/BMXX80.c:253:9:BMP180_computeB5	24	static
+../Application/User/Core/BMXX80.c:262:9:BMP180_readRawPressure	16	static
+../Application/User/Core/BMXX80.c:292:6:BMP180_Init	16	static
+../Application/User/Core/BMXX80.c:466:7:BMP180_ReadTemperature	24	static
+../Application/User/Core/BMXX80.c:577:9:BMP180_ReadPressure	56	static
+../Application/User/Core/BMXX80.c:709:7:BMP180_PressureToAltitude	16	static
+../Application/User/Core/BMXX80.c:716:7:BMP180_SeaLevelForAltitude	24	static

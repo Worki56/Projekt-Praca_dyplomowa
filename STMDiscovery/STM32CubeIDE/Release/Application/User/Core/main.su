@@ -1,0 +1,10 @@
+C:/TouchGFXProjects/oby/Core/Src/main.c:1140:13:TouchGFX_Task	8	static
+C:/TouchGFXProjects/oby/Core/Src/main.c:1159:6:StartTask02	8	static
+C:/TouchGFXProjects/oby/Core/Src/main.c:163:6:Delay_us	0	static
+C:/TouchGFXProjects/oby/Core/Src/main.c:1065:6:StartDefaultTask	16	static
+C:/TouchGFXProjects/oby/Core/Src/main.c:332:6:SystemClock_Config	224	static
+C:/TouchGFXProjects/oby/Core/Src/main.c:205:5:main	128	static,ignoring_inline_asm
+C:/TouchGFXProjects/oby/Core/Src/main.c:1101:6:HAL_UART_RxCpltCallback	8	static
+C:/TouchGFXProjects/oby/Core/Src/main.c:1110:6:HAL_SPI_RxCpltCallback	8	static
+C:/TouchGFXProjects/oby/Core/Src/main.c:1282:6:HAL_TIM_PeriodElapsedCallback	0	static
+C:/TouchGFXProjects/oby/Core/Src/main.c:1310:6:Error_Handler	0	static

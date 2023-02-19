@@ -1,0 +1,2 @@
+C:/TouchGFXProjects/oby/Core/Src/freertos.c:61:6:vApplicationIdleHook	8	static
+C:/TouchGFXProjects/oby/Core/Src/freertos.c:77:6:vApplicationStackOverflowHook	16	static

@@ -1,0 +1,4 @@
+../Application/User/Core/hmc5883l.c:139:6:HMC5883L_ReadXYZ	48	static
+../Application/User/Core/hmc5883l.c:110:8:HMC5883L_ReadAngle	32	static
+../Application/User/Core/hmc5883l.c:172:6:HMC5883L_ChangeMode	24	static
+../Application/User/Core/hmc5883l.c:85:6:HMC5883L_Init	48	static

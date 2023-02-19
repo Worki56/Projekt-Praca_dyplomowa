@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextDatabase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="texts.xsd" Version="4.21.0">
+  <Languages>
+    <Language Id="GB" />
+  </Languages>
+  <Texts>
+    <TextGroup Id="Group1" />
+    <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_5JPQ" Alignment="Left" TypographyId="Typography_01">
+        <Translation Language="GB">Wiktor Rosinski &amp; Adam Nowinowski</Translation>
+      </Text>
+      <Text Id="__SingleUse_A6LB" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">Analizator dla hulajnogi elektrycznej</Translation>
+      </Text>
+      <Text Id="__SingleUse_UJF8" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">PRACA DYPLOMOWA INZYNIERSKA</Translation>
+      </Text>
+      <Text Id="__SingleUse_EMPC" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">Zapis</Translation>
+      </Text>
+      <Text Id="__SingleUse_WPIT" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">GPS-&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_W552" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">Gx:&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_XBPL" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">Gz:&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_RA0H" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">Gy:&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_88EE" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">Ax:&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_CSK4" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">Az:&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_QG3X" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">Ay:&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_B5ZD" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">z_mag:&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_9UXM" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">y_mag:&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_AEBW" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">x_mag:&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_MD0A" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">CisnBMP:&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_O53G" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">TempBMP:&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_O2QJ" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">Wartosci z czujnikow</Translation>
+      </Text>
+      <Text Id="__SingleUse_DXWF" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">TempDH:&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_PYRT" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">WilgDH:&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_LOCP" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">SPI-&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_1806" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">CZUJ-&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_1DKF" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">CZUJ-&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_B633" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">GPS-&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_EDAB" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">SPI-&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_JH5O" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">GPS-&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_BYTC" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">SPI-&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_0WJ3" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">Zapisane</Translation>
+      </Text>
+      <Text Id="__SingleUse_PJEP" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">Proba zapisu</Translation>
+      </Text>
+      <Text Id="__SingleUse_Z27A" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">Zmienne testowe</Translation>
+      </Text>
+      <Text Id="__SingleUse_I99L" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">Przerwania</Translation>
+      </Text>
+    </TextGroup>
+  </Texts>
+  <Typographies>
+    <Typography Id="Default" Font="verdana.ttf" Size="20" Bpp="4" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="Large" Font="verdana.ttf" Size="40" Bpp="4" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="Small" Font="verdana.ttf" Size="10" Bpp="4" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="Typography_00" Font="trebucbd.ttf" Size="23" Bpp="4" Direction="LTR" WildcardCharacters="-,." WildcardCharacterRanges="0-9" />
+    <Typography Id="Typography_01" Font="times.ttf" Size="20" Bpp="4" Direction="LTR" FallbackCharacter="?" />
+  </Typographies>
+</TextDatabase>

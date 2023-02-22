@@ -8,9 +8,9 @@
 #include <mvp/View.hpp>
 #include <gui/screen3_screen/Screen3Presenter.hpp>
 #include <touchgfx/widgets/Box.hpp>
+#include <touchgfx/widgets/TextArea.hpp>
 #include <touchgfx/widgets/RadioButton.hpp>
 #include <touchgfx/widgets/RadioButtonGroup.hpp>
-#include <touchgfx/widgets/TextArea.hpp>
 #include <touchgfx/widgets/Image.hpp>
 
 class Screen3ViewBase : public touchgfx::View<Screen3Presenter>
@@ -29,6 +29,7 @@ protected:
      * Member Declarations
      */
     touchgfx::Box __background;
+    touchgfx::TextArea tA1_1_1_1;
     touchgfx::RadioButtonGroup<2> radioButtonGroup1;
     touchgfx::RadioButton radioButton2;
     touchgfx::RadioButton radioButton1;

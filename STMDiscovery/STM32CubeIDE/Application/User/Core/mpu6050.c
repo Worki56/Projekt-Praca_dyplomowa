@@ -57,7 +57,8 @@ uint8_t MPU6050_Init(I2C_HandleTypeDef *I2Cx, uint8_t Gyro_FS, uint8_t Acc_FS, u
 		HAL_I2C_Mem_Write(I2Cx, MPU6050_ADDR, PWR_MGMT_1_REG, 1, &MPU6050_tx, 1, 10);
 		HAL_Delay(10);
 
-		MPU6050_tx = 0x00; // Set No Sampling
+		//MPU6050_tx = 0x00; // Set No Sampling
+		MPU6050_tx = 0x07; //1000Hz
 		HAL_I2C_Mem_Write(I2Cx, MPU6050_ADDR, SMPLRT_DIV_REG, 1, &MPU6050_tx, 1, 10);
 		HAL_Delay(10);
 
@@ -146,7 +147,7 @@ uint8_t MPU6050_DataReady(I2C_HandleTypeDef *I2Cx)
 
 void MPU6050_Read_All(I2C_HandleTypeDef *I2Cx, MPU6050_t *DataStruct)
 {
-	HAL_I2C_Mem_Read(I2Cx, MPU6050_ADDR, ACCEL_XOUT_H_REG, 1, MPU6050_rx_buf, 20, 10);
+	HAL_I2C_Mem_Read(I2Cx, MPU6050_ADDR, ACCEL_XOUT_H_REG, 1, MPU6050_rx_buf, 20, 100);
 }
 
 void MPU6050_Read_All_DMA(I2C_HandleTypeDef *I2Cx, MPU6050_t *DataStruct)

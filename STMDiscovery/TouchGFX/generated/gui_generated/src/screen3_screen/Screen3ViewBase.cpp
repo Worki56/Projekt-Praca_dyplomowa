@@ -3,8 +3,8 @@
 /*********************************************************************************/
 #include <gui_generated/screen3_screen/Screen3ViewBase.hpp>
 #include <touchgfx/Color.hpp>
-#include <images/BitmapDatabase.hpp>
 #include <texts/TextKeysAndLanguages.hpp>
+#include <images/BitmapDatabase.hpp>
 
 Screen3ViewBase::Screen3ViewBase() :
     radioButtonSelectedCallback(this, &Screen3ViewBase::radioButtonSelectedCallbackHandler)
@@ -12,6 +12,12 @@ Screen3ViewBase::Screen3ViewBase() :
     __background.setPosition(0, 0, 480, 272);
     __background.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     add(__background);
+
+    tA1_1_1_1.setXY(119, 238);
+    tA1_1_1_1.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    tA1_1_1_1.setLinespacing(0);
+    tA1_1_1_1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_BY0P));
+    add(tA1_1_1_1);
 
     radioButtonGroup1.setRadioButtonSelectedHandler(radioButtonSelectedCallback);
     
@@ -29,7 +35,7 @@ Screen3ViewBase::Screen3ViewBase() :
     radioButtonGroup1.add(radioButton1);
     add(radioButton1);
 
-    tA1_1_1.setXY(100, 204);
+    tA1_1_1.setXY(100, 203);
     tA1_1_1.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     tA1_1_1.setLinespacing(0);
     tA1_1_1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_5JPQ));

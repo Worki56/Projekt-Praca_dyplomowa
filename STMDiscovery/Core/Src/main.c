@@ -356,7 +356,7 @@ int main(void)
 /*Inicjacja zegara odpowiedzialnego za liczenie mileskund */
   HAL_TIM_Base_Start_IT(&htim7);
   /*Inicjacja ustawień dla czujników */
-  MPU6050_Init(&hi2c1, 2, 2, 5);
+  MPU6050_Init(&hi2c1, 1, 1, 5);
   MPU6050_Bypass(&hi2c1);
   HMC5883L_Setup(&hi2c1);
   MPU6050_Master(&hi2c1);
@@ -963,7 +963,7 @@ static void MX_TIM14_Init(void)
   htim14.Instance = TIM14;
   htim14.Init.Prescaler = 9999;
   htim14.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim14.Init.Period = 30000;
+  htim14.Init.Period = 40000;
   htim14.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   htim14.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
   if (HAL_TIM_Base_Init(&htim14) != HAL_OK)
@@ -1196,7 +1196,6 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) {
 		memcpy(Received2, Received, GPSbufor);
 		asdGPS[0]++;
 		pomuart=0;
-
 	}
 }
 
@@ -1327,6 +1326,12 @@ void StartTask03(void *argument)
 							HAL_I2C_DeInit(&hi2c1);
 							HAL_I2C_Init(&hi2c1);
 							awaria=0;
+							MPU6050_Init(&hi2c1, 1, 1, 5);
+							MPU6050_Bypass(&hi2c1);
+							HMC5883L_Setup(&hi2c1);
+							MPU6050_Master(&hi2c1);
+							MPU6050_Slave_Read(&hi2c1);
+							BMP180_Init(&hi2c1,BMP180_STANDARD);
 							osDelay(500);
 						}
 			}
@@ -1358,7 +1363,6 @@ void StartTask04(void *argument)
 	  Received[0]=0;
 	  Received[1]=0;
 	  HAL_UART_Receive_IT(&huart6, Received, GPSbufor);
-
   }
   /* USER CODE END StartTask04 */
 }
@@ -1404,7 +1408,6 @@ void StartTask06(void *argument)
 	  if(Received[1]==0){
 		  osSemaphoreRelease(UartsemHandle);
 		  HAL_UART_AbortReceive_IT(&huart6);
-
 	  }
 	  osDelay(1);
 	  pomuart++;
@@ -1438,8 +1441,6 @@ void StartTask07(void *argument)
 	  /*wywyołanie SPI_Receive_DMA*/
 	  osSemaphoreAcquire(SPIsemHandle, portMAX_DELAY);
 	  HAL_SPI_Receive_DMA(&hspi5,Received4, SPIbufor);
-	  __HAL_DMA_DISABLE_IT(&hdma_spi5_rx,DMA_IT_HT);
-
   }
   /* USER CODE END StartTask07 */
 }

@@ -7,7 +7,8 @@
 #include <texts/TextKeysAndLanguages.hpp>
 
 Screen1ViewBase::Screen1ViewBase() :
-    radioButtonSelectedCallback(this, &Screen1ViewBase::radioButtonSelectedCallbackHandler)
+    radioButtonSelectedCallback(this, &Screen1ViewBase::radioButtonSelectedCallbackHandler),
+    buttonCallback(this, &Screen1ViewBase::buttonCallbackHandler)
 {
     __background.setPosition(0, 0, 480, 272);
     __background.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
@@ -125,6 +126,7 @@ Screen1ViewBase::Screen1ViewBase() :
 
     toggleButton1.setXY(155, 213);
     toggleButton1.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_TOGGLEBUTTON_LARGE_ROUNDED_TEXT_ON_ACTIVE_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_TOGGLEBUTTON_LARGE_ROUNDED_TEXT_OFF_NORMAL_ID));
+    toggleButton1.setAction(buttonCallback);
     add(toggleButton1);
 }
 
@@ -156,5 +158,13 @@ void Screen1ViewBase::radioButtonSelectedCallbackHandler(const touchgfx::Abstrac
     }
 }
 
+void Screen1ViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
+{
+    if (&src == &toggleButton1)
+    {
+        //Interaction3
+        //When toggleButton1 clicked execute C++ code
+        //Execute C++ code
 
-
+    }
+}

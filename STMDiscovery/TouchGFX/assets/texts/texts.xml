@@ -6,6 +6,9 @@
   <Texts>
     <TextGroup Id="Group1" />
     <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_BY0P" Alignment="Left" TypographyId="Typography_01">
+        <Translation Language="GB">Promotor dr inz. Dominik Łuczak</Translation>
+      </Text>
       <Text Id="__SingleUse_5JPQ" Alignment="Left" TypographyId="Typography_01">
         <Translation Language="GB">Wiktor Rosinski &amp; Adam Nowinowski</Translation>
       </Text>

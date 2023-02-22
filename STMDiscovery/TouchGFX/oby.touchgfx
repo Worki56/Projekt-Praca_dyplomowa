@@ -5,6 +5,22 @@
         "Name": "Screen3",
         "Components": [
           {
+            "Type": "TextArea",
+            "Name": "tA1_1_1_1",
+            "X": 119,
+            "Y": 238,
+            "Width": 272,
+            "Height": 23,
+            "TextId": "__SingleUse_BY0P",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
             "Type": "RadioButton",
             "Name": "radioButton2",
             "Y": 238,
@@ -35,7 +51,7 @@
             "Type": "TextArea",
             "Name": "tA1_1_1",
             "X": 100,
-            "Y": 204,
+            "Y": 203,
             "Width": 311,
             "Height": 23,
             "TextId": "__SingleUse_5JPQ",
@@ -69,7 +85,7 @@
             "X": 61,
             "Y": 130,
             "Width": 358,
-            "Height": 26,
+            "Height": 27,
             "TextId": "__SingleUse_UJF8",
             "TextRotation": "0",
             "Color": {

@@ -74,11 +74,13 @@ private:
      * Callback Declarations
      */
     touchgfx::Callback<Screen1ViewBase, const touchgfx::AbstractButton&> radioButtonSelectedCallback;
+    touchgfx::Callback<Screen1ViewBase, const touchgfx::AbstractButton&> buttonCallback;
 
     /*
      * Callback Handler Declarations
      */
     void radioButtonSelectedCallbackHandler(const touchgfx::AbstractButton& src);
+    void buttonCallbackHandler(const touchgfx::AbstractButton& src);
 
 };
 

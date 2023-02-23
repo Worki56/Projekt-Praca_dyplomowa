@@ -8,10 +8,10 @@
 #include <mvp/View.hpp>
 #include <gui/screen1_screen/Screen1Presenter.hpp>
 #include <touchgfx/widgets/Box.hpp>
+#include <touchgfx/widgets/TextAreaWithWildcard.hpp>
 #include <touchgfx/widgets/RadioButton.hpp>
 #include <touchgfx/widgets/RadioButtonGroup.hpp>
 #include <touchgfx/widgets/TextArea.hpp>
-#include <touchgfx/widgets/TextAreaWithWildcard.hpp>
 #include <touchgfx/widgets/ToggleButton.hpp>
 
 class Screen1ViewBase : public touchgfx::View<Screen1Presenter>
@@ -30,10 +30,11 @@ protected:
      * Member Declarations
      */
     touchgfx::Box __background;
+    touchgfx::TextAreaWithOneWildcard tA10_1;
     touchgfx::RadioButtonGroup<2> radioButtonGroup1;
     touchgfx::RadioButton radioButton2;
     touchgfx::TextArea tA1_1;
-    touchgfx::TextAreaWithOneWildcard tA10_1;
+    touchgfx::TextAreaWithOneWildcard tA10_2;
     touchgfx::TextAreaWithOneWildcard tA10_0;
     touchgfx::TextAreaWithOneWildcard tA7_2;
     touchgfx::TextAreaWithOneWildcard tA7_1;
@@ -53,6 +54,8 @@ protected:
      */
     static const uint16_t TA10_1_SIZE = 20;
     touchgfx::Unicode::UnicodeChar tA10_1Buffer[TA10_1_SIZE];
+    static const uint16_t TA10_2_SIZE = 20;
+    touchgfx::Unicode::UnicodeChar tA10_2Buffer[TA10_2_SIZE];
     static const uint16_t TA10_0_SIZE = 20;
     touchgfx::Unicode::UnicodeChar tA10_0Buffer[TA10_0_SIZE];
     static const uint16_t TA7_2_SIZE = 20;

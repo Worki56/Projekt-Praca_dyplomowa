@@ -3,8 +3,8 @@
 /*********************************************************************************/
 #include <gui_generated/screen1_screen/Screen1ViewBase.hpp>
 #include <touchgfx/Color.hpp>
-#include <images/BitmapDatabase.hpp>
 #include <texts/TextKeysAndLanguages.hpp>
+#include <images/BitmapDatabase.hpp>
 
 Screen1ViewBase::Screen1ViewBase() :
     radioButtonSelectedCallback(this, &Screen1ViewBase::radioButtonSelectedCallbackHandler),
@@ -13,6 +13,14 @@ Screen1ViewBase::Screen1ViewBase() :
     __background.setPosition(0, 0, 480, 272);
     __background.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     add(__background);
+
+    tA10_1.setPosition(161, 105, 159, 25);
+    tA10_1.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    tA10_1.setLinespacing(0);
+    tA10_1Buffer[0] = 0;
+    tA10_1.setWildcard(tA10_1Buffer);
+    tA10_1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_29CB));
+    add(tA10_1);
 
     radioButtonGroup1.setRadioButtonSelectedHandler(radioButtonSelectedCallback);
     
@@ -29,15 +37,15 @@ Screen1ViewBase::Screen1ViewBase() :
     tA1_1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_EMPC));
     add(tA1_1);
 
-    tA10_1.setPosition(320, 104, 145, 25);
-    tA10_1.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    tA10_1.setLinespacing(0);
-    tA10_1Buffer[0] = 0;
-    tA10_1.setWildcard(tA10_1Buffer);
-    tA10_1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_1806));
-    add(tA10_1);
+    tA10_2.setPosition(320, 104, 145, 25);
+    tA10_2.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    tA10_2.setLinespacing(0);
+    tA10_2Buffer[0] = 0;
+    tA10_2.setWildcard(tA10_2Buffer);
+    tA10_2.setTypedText(touchgfx::TypedText(T___SINGLEUSE_1806));
+    add(tA10_2);
 
-    tA10_0.setPosition(161, 104, 159, 25);
+    tA10_0.setPosition(2, 104, 159, 25);
     tA10_0.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     tA10_0.setLinespacing(0);
     tA10_0Buffer[0] = 0;

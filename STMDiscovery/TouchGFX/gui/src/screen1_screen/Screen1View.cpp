@@ -41,6 +41,7 @@ void Screen1View::handleTickEvent()
 	Unicode::snprintf(tA7_2Buffer,TA7_2_SIZE,"%d",asdUART1[2]);
 	Unicode::snprintf(tA10_0Buffer,TA10_0_SIZE,"%d",asdCZUJNIKI[0]);
 	Unicode::snprintf(tA10_1Buffer,TA10_1_SIZE,"%d",asdCZUJNIKI[1]);
+	Unicode::snprintf(tA10_2Buffer,TA10_2_SIZE,"%d",asdCZUJNIKI[2]);
 
 	tA6_0.invalidate();
 	tA6_1.invalidate();
@@ -50,6 +51,7 @@ void Screen1View::handleTickEvent()
 	tA7_2.invalidate();
 	tA10_0.invalidate();
 	tA10_1.invalidate();
+	tA10_2.invalidate();
 	toggleButton1.invalidate();
 
 	if(toggleButton1.getState()==false){

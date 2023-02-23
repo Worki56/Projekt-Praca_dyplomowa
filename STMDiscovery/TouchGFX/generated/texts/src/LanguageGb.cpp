@@ -10,6 +10,7 @@ KEEP extern const uint32_t indicesGb[] TEXT_LOCATION_FLASH_ATTRIBUTE;
 // Remap all strings
 TEXT_LOCATION_FLASH_PRAGMA
 KEEP extern const uint32_t indicesGb[] TEXT_LOCATION_FLASH_ATTRIBUTE = {
+    231, // T___SINGLEUSE_29CB: "CZUJ-<>"
     72,  // T___SINGLEUSE_BY0P: "Promotor dr inz. Dominik ?uczak"
     38,  // T___SINGLEUSE_5JPQ: "Wiktor Rosinski & Adam Nowinowski"
     0,   // T___SINGLEUSE_A6LB: "Analizator dla hulajnogi elektrycznej"

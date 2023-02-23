@@ -268,7 +268,7 @@ uint16_t Milliseconds;
 uint16_t asdUART1[3]={0,0,0};
 /*kontrola wykonania polecenia {przerwanie_IT, przyrównanie do przerwania, iteracja co zaspis} dla UART */
 uint16_t asdGPS[3]={0,0,0};
-/*kontrola wykonania polecenia {przerwanie timera, iteracja co zapis, rezerwa} dla SPI */
+/*kontrola wykonania polecenia {przerwanie timera, iteracja co próbe zapisu , iteracja co kolejny pakiet bufora} dla SPI */
 uint16_t asdCZUJNIKI[3]={0,0,0};
 float TempDH, WilgDH;
 float TempBMP;
@@ -1255,12 +1255,13 @@ void StartTask02(void *argument)
 		  /*funkcja odpowiedzalna za zapis odpowiednich danych do odpowiednich plików*/
 		  if(zapisdzial!=0){
 		  			int i;
+		  			asdCZUJNIKI[1]++;
 		  			/*tworzenie pliku jeżeli nie istnieje i/lub dopisanie danych na końcu pliku*/
 		  			if(f_open(&SDFile, "DANEMPU.TXT", FA_OPEN_APPEND | FA_WRITE) == FR_OK){
 						for(i = 0; i < licznik4; ++i){
 							res = f_write(&SDFile, buffer[i], strlen((char *)buffer[i]), (void *)&byteswritten);
 							if((byteswritten == 0) || (res == FR_OK)){
-								asdCZUJNIKI[1]++;
+								asdCZUJNIKI[2]++;
 							}
 						}
 					}

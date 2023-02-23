@@ -25,9 +25,9 @@
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:403:41:virtual const UnicodeChar* touchgfx::TextArea::getWildcard2() const	0	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:84:41:virtual const UnicodeChar* touchgfx::TextAreaWithOneWildcard::getWildcard1() const	0	static
 ../../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp:36:7:touchgfx::View<Screen1Presenter>::~View()	0	static
-C:/TouchGFXProjects/oby/TouchGFX/generated/gui_generated/src/screen1_screen/Screen1ViewBase.cpp:133:1:Screen1ViewBase::~Screen1ViewBase()	0	static
-C:/TouchGFXProjects/oby/TouchGFX/generated/gui_generated/src/screen1_screen/Screen1ViewBase.cpp:138:6:virtual void Screen1ViewBase::setupScreen()	0	static
-C:/TouchGFXProjects/oby/TouchGFX/generated/gui_generated/src/screen1_screen/Screen1ViewBase.cpp:161:6:void Screen1ViewBase::buttonCallbackHandler(const touchgfx::AbstractButton&)	0	static
+C:/TouchGFXProjects/oby/TouchGFX/generated/gui_generated/src/screen1_screen/Screen1ViewBase.cpp:141:1:Screen1ViewBase::~Screen1ViewBase()	0	static
+C:/TouchGFXProjects/oby/TouchGFX/generated/gui_generated/src/screen1_screen/Screen1ViewBase.cpp:146:6:virtual void Screen1ViewBase::setupScreen()	0	static
+C:/TouchGFXProjects/oby/TouchGFX/generated/gui_generated/src/screen1_screen/Screen1ViewBase.cpp:169:6:void Screen1ViewBase::buttonCallbackHandler(const touchgfx::AbstractButton&)	0	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:357:8:touchgfx::Callback<touchgfx::RadioButtonGroup<2>, const touchgfx::AbstractButton&, void, void>::~Callback()	0	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/RadioButtonGroup.hpp:53:13:touchgfx::RadioButtonGroup<CAPACITY>::~RadioButtonGroup() [with short unsigned int CAPACITY = 2]	0	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:357:8:touchgfx::Callback<Screen1ViewBase, const touchgfx::AbstractButton&>::~Callback()	0	static
@@ -47,20 +47,20 @@ C:/TouchGFXProjects/oby/TouchGFX/generated/gui_generated/src/screen1_screen/Scre
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:357:8:virtual touchgfx::Callback<touchgfx::RadioButtonGroup<2>, const touchgfx::AbstractButton&, void, void>::~Callback()	8	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:357:8:virtual touchgfx::Callback<Screen1ViewBase, const touchgfx::AbstractButton&>::~Callback()	8	static
 ../../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp:36:7:virtual touchgfx::View<Screen1Presenter>::~View()	8	static
-C:/TouchGFXProjects/oby/TouchGFX/generated/gui_generated/src/screen1_screen/Screen1ViewBase.cpp:133:1:virtual Screen1ViewBase::~Screen1ViewBase()	8	static
+C:/TouchGFXProjects/oby/TouchGFX/generated/gui_generated/src/screen1_screen/Screen1ViewBase.cpp:141:1:virtual Screen1ViewBase::~Screen1ViewBase()	8	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:121:18:virtual void touchgfx::Drawable::invalidateContent() const	0	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:43:18:virtual void touchgfx::TextAreaWithWildcardBase::invalidateContent() const	8	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/RadioButtonGroup.hpp:227:18:void touchgfx::RadioButtonGroup<CAPACITY>::radioButtonDeselectedHandler(const touchgfx::AbstractButton&) [with short unsigned int CAPACITY = 2]	16	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:111:18:virtual void touchgfx::TextArea::setBaselineY(int16_t)	16	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/RadioButtonGroup.hpp:63:18:void touchgfx::RadioButtonGroup<CAPACITY>::add(touchgfx::RadioButton&) [with short unsigned int CAPACITY = 2]	8	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/RadioButtonGroup.hpp:153:18:bool touchgfx::RadioButtonGroup<CAPACITY>::getDeselectionEnabled() const [with short unsigned int CAPACITY = 2]	0	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/RadioButtonGroup.hpp:202:18:void touchgfx::RadioButtonGroup<CAPACITY>::radioButtonClickedHandler(const touchgfx::AbstractButton&) [with short unsigned int CAPACITY = 2]	16	static
-../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:111:18:virtual void touchgfx::TextArea::setBaselineY(int16_t)	16	static
-C:/TouchGFXProjects/oby/TouchGFX/generated/gui_generated/src/screen1_screen/Screen1ViewBase.cpp:143:6:void Screen1ViewBase::radioButtonSelectedCallbackHandler(const touchgfx::AbstractButton&)	16	static
+C:/TouchGFXProjects/oby/TouchGFX/generated/gui_generated/src/screen1_screen/Screen1ViewBase.cpp:151:6:void Screen1ViewBase::radioButtonSelectedCallbackHandler(const touchgfx::AbstractButton&)	16	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:49:36:virtual touchgfx::TextArea::BoundingArea touchgfx::TextAreaWithWildcardBase::calculateBoundingArea() const	0	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:343:10:void touchgfx::Drawable::setXY(int16_t, int16_t)	16	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:233:10:void touchgfx::Drawable::setPosition(int16_t, int16_t, int16_t, int16_t)	16	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Widget.hpp:36:7:touchgfx::Widget::Widget()	0	static
-../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp:36:5:touchgfx::AbstractButton::AbstractButton()	8	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:43:5:touchgfx::TextArea::TextArea()	8	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:65:5:touchgfx::TextAreaWithOneWildcard::TextAreaWithOneWildcard()	8	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp:36:5:touchgfx::AbstractButton::AbstractButton()	8	static
 C:/TouchGFXProjects/oby/TouchGFX/generated/gui_generated/src/screen1_screen/Screen1ViewBase.cpp:9:1:Screen1ViewBase::Screen1ViewBase()	152	static
